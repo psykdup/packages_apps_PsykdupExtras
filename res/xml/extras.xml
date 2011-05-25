@@ -2,6 +2,5 @@
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android">
         <CheckBoxPreference android:title="@string/title_display_adb_usb_debugging_notif" android:key="display_adb_usb_debugging_notif" android:summaryOn="@string/summary_on_display_adb_usb_debugging_notif" android:summaryOff="@string/summary_off_display_adb_usb_debugging_notif" />
-        <!--<CheckBoxPreference android:key="media_scanner" android:title="@string/media_scanner_title" android:summaryOn="@string/media_scanner_summary_on" android:summaryOff="@string/media_scanner_summary_off" />
-        </PreferenceScreen>-->
+        <CheckBoxPreference android:key="media_scanner" android:title="@string/media_scanner_title" android:summaryOn="@string/media_scanner_summary_on" android:summaryOff="@string/media_scanner_summary_off" />
 </PreferenceScreen>

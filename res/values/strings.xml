@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <string name="app_label">Psykdup Extras</string>
-    <string name="title_display_adb_usb_debugging_notif">USB debugging</string>
-    <string name="summary_on_display_adb_usb_debugging_notif">USB debugging notification will be displayed</string>
-    <string name="summary_off_display_adb_usb_debugging_notif">USB debugging notification will not be displayed</string>
-    <string name="title_launcher_orientation">Launcher2 orientation</string>
+    <string name="title_display_adb_usb_debugging_notif">ADB notification</string>
+    <string name="summary_on_display_adb_usb_debugging_notif">Debugging notification will be displayed</string>
+    <string name="summary_off_display_adb_usb_debugging_notif">Debugging notification will not be displayed</string>
+    <!--<string name="title_launcher_orientation">Launcher2 orientation</string>
     <string name="summary_on_launcher_orientation">Launcher2 orientation is enabled</string>
     <string name="summary_off_launcher_orientation">Launcher2 orientation is disabled</string>
     <string name="voicemail_providers">Voicemail defaults</string>
@@ -20,8 +20,8 @@
     <string name="summary_off_vm_uses_youmail">Youmail defaults are disabled</string>
     <string name="title_vm_uses_verizon">Verizon</string>
     <string name="summary_on_vm_uses_verizon">Verizon vvm defaults are enabled</string>
-    <string name="summary_off_vm_uses_verizon">Verizon vvm defaults are disabled</string>
-  <string name="media_scanner_title">Media Scanner</string>
-  <string name="media_scanner_summary_on">Change to improve boot times - Enabled.</string>
-  <string name="media_scanner_summary_off">Change to improve boot times - Disabled.</string>
+    <string name="summary_off_vm_uses_verizon">Verizon vvm defaults are disabled</string>-->
+  <string name="media_scanner_title">Media scanner</string>
+  <string name="media_scanner_summary_on">Media scanner is enabled</string>
+  <string name="media_scanner_summary_off">Media scanner is disabled</string>
 </resources>
