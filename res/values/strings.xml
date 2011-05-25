@@ -21,7 +21,21 @@
     <string name="title_vm_uses_verizon">Verizon</string>
     <string name="summary_on_vm_uses_verizon">Verizon vvm defaults are enabled</string>
     <string name="summary_off_vm_uses_verizon">Verizon vvm defaults are disabled</string>-->
-  <string name="media_scanner_title">Media scanner</string>
-  <string name="media_scanner_summary_on">Media scanner is enabled</string>
-  <string name="media_scanner_summary_off">Media scanner is disabled</string>
+    <string name="media_scanner_title">Media scanner</string>
+    <string name="media_scanner_summary_on">Media scanner is enabled</string>
+    <string name="media_scanner_summary_off">Media scanner is disabled</string>
+    <string name="backup_restore_title">Backup/restore</string>
+    <string name="backup_restore_summary">Manage clockworkmod recovery on your device</string>
+    <string name="recovery_title">Recovery</string>
+    <string name="cwm_title">ClockWorkMod recovery</string>
+    <string name="cwm_summary">Reboot into recovery mode</string>
+    <string name="cwm_backup_title">Create backup</string>
+    <string name="cwm_backup_summary">Create a full system backup</string>
+    <string name="cwm_restore_title">Restore backup</string>
+    <string name="cwm_restore_summary">Restore an existing backup</string>
+    <string name="cwm_delete_title">Delete backup</string>
+    <string name="cwm_delete_summary">Delete existing backups</string>
+    <string name="update_title">CWM package</string>
+    <string name="cwm_update_title">Flash CWM package</string>
+    <string name="cwm_update_summary">Reboot into recovery and flash selected CWM zip. This can be a kernel, theme or update package!</string>
 </resources>

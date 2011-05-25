@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/recovery_title">
+<PreferenceScreen android:key="cwm_reboot" android:title="@string/cwm_title" android:summary="@string/cwm_summary"></PreferenceScreen>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/backup_restore_title">
+<EditTextPreference android:key="cwm_backup" android:title="@string/cwm_backup_title" android:summary="@string/cwm_backup_summary"></EditTextPreference>
+<PreferenceScreen android:key="cwm_restore" android:title="@string/cwm_restore_title" android:summary="@string/cwm_restore_summary"></PreferenceScreen>
+<PreferenceScreen android:key="cwm_delete" android:title="@string/cwm_delete_title" android:summary="@string/cwm_delete_summary"></PreferenceScreen>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/update_title">
+<PreferenceScreen android:key="cwm_update" android:title="@string/cwm_update_title" android:summary="@string/cwm_update_summary"></PreferenceScreen>
+</PreferenceCategory>
+</PreferenceScreen>
