@@ -32,9 +32,9 @@ implements Preference.OnPreferenceChangeListener {
 
     private final static String MEDIA_SCANNER_PREF = "media_scanner";
 
-    private final static String MEDIA_SCANNER_ENABLE_CMD = "/system/bin/nitrality ms enable";
+    private final static String MEDIA_SCANNER_ENABLE_CMD = "/system/bin/psykdup ms enable";
 	
-    private static final String MEDIA_SCANNER_DISABLE_CMD = "/system/bin/nitrality ms disable";
+    private static final String MEDIA_SCANNER_DISABLE_CMD = "/system/bin/psykdup ms disable";
 
     private CheckBoxPreference mNotifADBPref;
     CheckBoxPreference mMediaScannerPref;
