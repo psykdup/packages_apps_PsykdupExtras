@@ -50,10 +50,9 @@ implements Preference.OnPreferenceChangeListener {
        pm = getPackageManager();
        mMediaScannerPref = (CheckBoxPreference)prefSet.findPreference(MEDIA_SCANNER_PREF);
        mMediaScannerPref.setOnPreferenceChangeListener(this);
-       mMediaScannerPref.setChecked(Settings.Secure.getInt(
-                getContentResolver(),
-                Settings.System.MEDIA_SCANNER, 1) != 0);
-
+       mediaComponentName = new ComponentName("com.android.providers.media", "com.android.providers.media.MediaScannerReceiver");
+		mMediaScannerPref.setChecked((pm.getComponentEnabledSetting(mediaComponentName)
+        				==PackageManager.COMPONENT_ENABLED_STATE_DISABLED) ? false:true);
 
        mNotifADBPref = (CheckBoxPreference)prefSet.findPreference(NOTIF_ADB);
        mNotifADBPref.setChecked(Settings.Secure.getInt(
