@@ -15,5 +15,8 @@
         </activity>
         <activity android:name="CWMActivity"></activity>
         <activity android:name="FilePickerActivity"></activity>
+        <activity android:name="ScriptReceiver"
+        android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
     </application>
 </manifest>
