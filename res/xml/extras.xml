@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android">
-        <CheckBoxPreference android:title="@string/title_display_adb_usb_debugging_notif" android:key="display_adb_usb_debugging_notif" android:summaryOn="@string/summary_on_display_adb_usb_debugging_notif" android:summaryOff="@string/summary_off_display_adb_usb_debugging_notif" />
+<PreferenceCategory android:title="@string/ui">
+        <CheckBoxPreference android:title="@string/title_display_adb_usb_debugging_notif" android:key="display_adb_usb_debugging_notif" android:summary="@string/summary_display_adb_usb_debugging_notif" />
+	<PreferenceScreen android:key="dpi"
+			android:title="@string/title_dpi_setting" android:summary="@string/summary_dpi_setting">
+			<intent android:targetPackage="com.android.psykdup_extras" android:action="android.intent.action.MAIN" android:targetClass="com.android.psykdup_extras.DpiSliderActivity"/>
+		</PreferenceScreen>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/perform">
         <CheckBoxPreference android:key="media_scanner" android:title="@string/media_scanner_title" android:summaryOn="@string/media_scanner_summary_on" android:summaryOff="@string/media_scanner_summary_off" />
+	<PreferenceScreen android:key="clean_thumbnails" android:title="@string/tools_clean_thumbs_title" android:summary="@string/tools_clean_thumbs_summary"></PreferenceScreen>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/recovery">
 	<PreferenceScreen android:key="backup_restore" android:title="@string/backup_restore_title" android:summary="@string/backup_restore_summary">
 			<intent android:action="android.intent.action.MAIN" android:targetPackage="com.android.psykdup_extras" android:targetClass="com.android.psykdup_extras.CWMActivity" />
 		</PreferenceScreen>
+</PreferenceCategory>
 </PreferenceScreen>

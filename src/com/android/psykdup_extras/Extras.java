@@ -28,8 +28,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.android.psykdup_extras.ShellInterface;
+
 public class Extras extends PreferenceActivity 
-implements Preference.OnPreferenceChangeListener {
+implements Preference.OnPreferenceChangeListener, OnPreferenceClickListener {
 
     private static final String TAG = "PsykdupExtras";
 
@@ -40,14 +42,22 @@ implements Preference.OnPreferenceChangeListener {
     private final static String MEDIA_SCANNER_ENABLE_CMD = "/system/bin/psykdup ms enable";
 	
     private static final String MEDIA_SCANNER_DISABLE_CMD = "/system/bin/psykdup ms disable";
+ 
+    private static final String CLEAN_THUMBS_CMD = "/system/bin/psykdup ctn";
+
+    private static final CharSequence CLEAN_THUMBS_PREF = "clean_thumbnails";
 
     private static String local_storage_root;
     public static String getStorageRoot() {
 	return local_storage_root;	
     }
+	public static String getTag() {
+		return TAG;
+	}
 
     private CheckBoxPreference mNotifADBPref;
     CheckBoxPreference mMediaScannerPref;
+    PreferenceScreen clean_thumbs;
     PackageManager pm;
     ComponentName mediaComponentName;
 
@@ -99,6 +109,9 @@ implements Preference.OnPreferenceChangeListener {
        mNotifADBPref.setChecked(Settings.Secure.getInt(
                 getContentResolver(),
                 Settings.Secure.DISPLAY_ADB_USB_DEBUGGING_NOTIFICATION, 1) != 0);
+
+	clean_thumbs = (PreferenceScreen)prefSet.findPreference(CLEAN_THUMBS_PREF);
+	clean_thumbs.setOnPreferenceClickListener(this);
         }
 
 	public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -132,6 +145,24 @@ implements Preference.OnPreferenceChangeListener {
 
         return false;
     }
+
+    public boolean onPreferenceClick(Preference preference) {
+		if (preference == clean_thumbs) {
+			if(ShellInterface.isSuAvailable())
+				try {
+					ShellInterface.runCommand(CLEAN_THUMBS_CMD);
+					return true;
+					}
+					catch (IOException e){
+						Toast.makeText(this, "Cleaning thumbnails cache failed!", Toast.LENGTH_LONG);
+					}
+		}
+		return false;
+    }
+	public static <T> T last(T[] array) {
+	    return array[array.length - 1];
+	}
+
     private void scanMedia() {
 
 	    File localFile = Environment.getExternalStorageDirectory();

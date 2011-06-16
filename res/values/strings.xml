@@ -2,12 +2,12 @@
 <resources>
     <string name="app_label">Psykdup Extras</string>
     <string name="title_display_adb_usb_debugging_notif">ADB notification</string>
-    <string name="summary_on_display_adb_usb_debugging_notif">Debugging notification will be displayed</string>
-    <string name="summary_off_display_adb_usb_debugging_notif">Debugging notification will not be displayed</string>
-    <!--<string name="title_launcher_orientation">Launcher2 orientation</string>
-    <string name="summary_on_launcher_orientation">Launcher2 orientation is enabled</string>
-    <string name="summary_off_launcher_orientation">Launcher2 orientation is disabled</string>
-    <string name="voicemail_providers">Voicemail defaults</string>
+    <string name="summary_display_adb_usb_debugging_notif">Display or hide the debugging notification</string>
+    <!--<string name="summary_off_display_adb_usb_debugging_notif">Debugging notification will not be displayed</string>-->
+    <string name="title_launcher_orientation">Launcher2 orientation</string>
+    <string name="summary_on_launcher_orientation">Allow the launcher to rotate</string>
+    <string name="summary_off_launcher_orientation">Note: this requires my modded Launcher2.apk to work!!!</string>
+    <!--<string name="voicemail_providers">Voicemail defaults</string>
     <string name="summary_voicemail_providers">Edit the default voicemail provider</string>
     <string name="title_vm_uses_carrier">Carrier</string>
     <string name="summary_on_vm_uses_carrier">Carrier defaults are enabled</string>
@@ -22,8 +22,8 @@
     <string name="summary_on_vm_uses_verizon">Verizon vvm defaults are enabled</string>
     <string name="summary_off_vm_uses_verizon">Verizon vvm defaults are disabled</string>-->
     <string name="media_scanner_title">Media scanner</string>
-    <string name="media_scanner_summary_on">Media scanner is enabled</string>
-    <string name="media_scanner_summary_off">Media scanner is disabled</string>
+    <string name="media_scanner_summary_on">Enable or disable the media scanner for improved boot times</string>
+    <string name="media_scanner_summary_off">Important: to access media files from the SD Card (i.e. Gallery, etc.) you must reenable the media scanner</string>
     <string name="backup_restore_title">Backup/restore</string>
     <string name="backup_restore_summary">Manage clockworkmod recovery on your device</string>
     <string name="recovery_title">Recovery</string>
@@ -38,4 +38,20 @@
     <string name="update_title">CWM package</string>
     <string name="cwm_update_title">Flash CWM package</string>
     <string name="cwm_update_summary">Reboot into recovery and flash selected CWM zip. This can be a kernel, theme or update package!</string>
+    <string name="tools_clean_thumbs_title">Clean media thumbnails</string>
+    <string name="tools_clean_thumbs_summary">Prevent gallery problems and heavy battery drain</string>
+    <string name="title_dpi_setting">Display resolution</string>
+    <string name="summary_dpi_setting">Change the display resolution (dpi)</string>
+    <string name="confirm_dpi_1">"Do you really want to set density to "</string>
+    <string name="confirm_dpi_2">"? This will restart the user interface!"</string>
+    <string name="lcd_density">Select desired dpi value</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="value">Value</string>
+    <string name="low">&lt;&lt;lower</string>
+    <string name="high">higher&gt;&gt;</string>
+    <string name="reset">Reset</string>
+    <string name="ui">User interface</string>
+    <string name="perform">Performance</string>
+    <string name="recovery">Manage recovery</string>
 </resources>
